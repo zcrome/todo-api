@@ -1,0 +1,28 @@
+{
+  "name": "ToDoUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "toDos": {
+      "type": "hasMany",
+      "model": "ToDo",
+      "foreignKey": ""
+    },
+    "notes": {
+      "type": "hasMany",
+      "model": "Note",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

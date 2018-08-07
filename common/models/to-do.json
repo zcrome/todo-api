@@ -1,0 +1,40 @@
+{
+  "name": "ToDo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "dateCreated": {
+      "type": "date"
+    },
+    "dateUpdated": {
+      "type": "date"
+    },
+    "isDeleted": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "toDoUser": {
+      "type": "belongsTo",
+      "model": "ToDoUser",
+      "foreignKey": ""
+    },
+    "tasks": {
+      "type": "hasMany",
+      "model": "Task",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
