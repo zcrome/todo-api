@@ -8,7 +8,11 @@
   "properties": {
     "name": {
       "type": "string"
-    }
+    },
+    "realm": null,
+    "username": null,
+    "emailVerified": null,
+    "verificationToken": null
   },
   "validations": [],
   "relations": {

@@ -19,7 +19,8 @@
       "type": "date"
     },
     "isDeleted": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   },
   "validations": [],
