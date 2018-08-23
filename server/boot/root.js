@@ -51,7 +51,8 @@ module.exports = function(app) {
             }, {
               isDeleted: false
             }]
-          }
+          },
+          include: "tasks"
         };
 
         ToDo.find(query, function (err, todos) {
